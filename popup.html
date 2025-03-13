@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TradingView Extension</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>TradingView Extension</h1>
+    <div class="settings">
+      <h2>Settings</h2>
+      <div class="setting-item">
+        <label for="autoRefresh">Auto Refresh:</label>
+        <input type="checkbox" id="autoRefresh">
+      </div>
+      <div class="setting-item">
+        <label for="refreshInterval">Refresh Interval (seconds):</label>
+        <input type="number" id="refreshInterval" min="1" value="60">
+      </div>
+    </div>
+    <div class="status">
+      <p>Status: <span id="statusText">Active</span></p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
